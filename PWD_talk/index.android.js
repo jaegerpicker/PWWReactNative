@@ -22,33 +22,8 @@ var PWD_talk = React.createClass({
       ToastAndroid.show(result, ToastAndroid.LONG);
     });
   },
-  getInitialState: function() {
-   return {
-     personId: '1'
-   };
- },
   render: function() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to the SWAPI person lookup!
-        </Text>
-        <TextInput
-          style={{height: 40, borderColor: 'gray', borderWidth: 1, width: 50, alignSelf: 'center'}}
-          onChangeText={(personId) => this.setState({personId})}
-          value={this.state.personId}
-          />
-
-        <TouchableHighlight
-        style={styles.button}
-        onPress={this.buttonClicked}>
-          <Text style={styles.buttonText}>Lookup Person's Name!</Text>
-      </TouchableHighlight>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
-    );
+    return luke.get_ui(styles, {personId}, this);
   }
 });
 

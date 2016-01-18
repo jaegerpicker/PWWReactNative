@@ -31,7 +31,7 @@ var PWD_talk = React.createClass({
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to the SWAPI person lookup!
+          Welcome to the SWAPI person lookup! PWW!
         </Text>
         <TextInput
           style={{height: 40, borderColor: 'gray', borderWidth: 1, width: 50, alignSelf: 'center'}}
